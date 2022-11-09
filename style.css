@@ -18,6 +18,11 @@ header{
     padding: 1em 1.5em 1em 1.5em;
     display: flex;
     justify-content: space-between;
+    animation: updown 750ms;
+}
+@keyframes updown{
+    0%{transform: translateY(-50px);}
+    100%{transform: translateY(0px);}
 }
 
 .img-logo{
@@ -58,7 +63,13 @@ header{
     justify-content: center;
     margin-top: 5em;
     margin-bottom: 3em;
+    animation: rightleft 750ms;
 }
+@keyframes rightleft{
+    0%{transform: translateX(-100px);}
+    100%{transform: translateX(0px);}
+}
+
 
 /* .wrap-inllus-1 div{
     position: relative;
@@ -77,6 +88,15 @@ header{
     font-weight: bold;
     color: var(--Very_Dark_Blue);
 }
+
+.wrap-content-part-one{
+    animation: leftright 750ms;
+}
+@keyframes leftright{
+    100%{transform: translateX(0px);}
+    0%{transform: translateX(100px);}
+}
+
 
 .wrap-content-part-one p{
     margin-bottom: 1.5em;
@@ -501,6 +521,20 @@ footer{
     }
     .i-a-2{
         margin-right: 3.5em;
+    }
+    .wrap-inllus-1{
+        animation: rightleft 750ms;
+    }
+    @keyframes rightleft{
+        0%{transform: translateX(100px);}
+        100%{transform: translateX(0px);}
+    }
+    .wrap-content-part-one{
+        animation: leftright 750ms;
+    }
+    @keyframes leftright{
+        0%{transform: translateX(-100px);}
+        100%{transform: translateX(0px);}
     }
 }
 
